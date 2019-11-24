@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: #282828;
+}
+
+.btn-group {
+    display: inline-block;
+    margin: 5px;
+}
+
+#logo{
+    font-family: 'Audiowide', cursive;
+    font-size:17px;
+    float: right;
+    padding-right: 20px;
+}
+
+.button {
+    background-color: #3E3E3E;
+    border:#282828;
+    color: #E2E2E2;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button1 {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.button3 {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.btn-group .button:hover {
+    background-color: #5c5c5c;
+}
+
+
+
+#header{
+    min-height: 400px;
+}
+.header {
+    position: relative;
+    height: 400px;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/photo-nepal.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+#img{
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/photo-nepal.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    z-index: -1; /*para que el imagen este siempre por detras*/
+    }
+
+#text {
+        margin-left: 25%;
+        position: absolute;
+        margin-top: -360px;
+        /* border: solid #5B6DCD 3px; */
+        width: 50%;
+
+    }
+    
+.header-title {
+    font-size: 5em;
+    margin-bottom: -0.5em;
+    transform: rotate(-6deg);
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    padding: 5px 10px;
+    background: #ffc844;
+    }
+    
+.header-subtitle {
+    font-size: 2.5em;
+    box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.07);
+    transform: rotate(-3deg);
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    padding: 5px 10px;
+    background: #ffc844;
+    margin-left: 30px;
+    margin-right: 40px;
+    }
+
+
+img.skiing { 
+    max-width: 130px;
+    position: absolute;
+    right:100px;
+    top: 280px;
+}
+
+#section{
+    min-height: 800px;
+    text-align: center;
+}
+
+#title{
+    font-family: 'Frank Ruhl Libre', serif;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+
+#title p{
+    font-size: 16px;
+} 
+
+.col {
+    float: left;
+    /* border: solid #5B6DCD 3px; */
+}
+
+.activity{
+    min-height: 232px;
+}
+
+.activity p{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media only screen and (min-width: 320px) {
+
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 600px) {
+
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+    
+@media only screen and (max-width: 1236px) {
+.header-title {font-size: 4.5em;}
+.header-subtitle {font-size: 2.2em;}
+img.skiing { width: 165px;
+                right:40px;}
+}
+
+@media only screen and (max-width: 1130px) {
+#text {margin-left: 20%;
+        width: 60%;}
+img.skiing { width: 160px;
+        right:40px;}
+}
+
+@media only screen and (max-width: 932px) {
+.header-title {font-size: 4em;}
+.header-subtitle {font-size: 2em;}
+img.skiing { width: 155px;}
+}
+
+@media only screen and (max-width: 834px) {
+#text {margin-left: 13%;
+        width: 72%;
+        margin-top: -300px;}
+img.skiing { width: 150px;}
+}
+
+@media only screen and (max-width: 714px) {
+.header-title {font-size: 3.5em;}
+.header-subtitle {font-size: 1.6em;}
+img.skiing { width: 140px;
+            right:0;}
+            
+}
+
+@media only screen and (max-width: 767px){
+    img.photo{ padding-top: 20px;} }
+
+@media only screen and (max-width: 599px){
+    img.photo#dos{ padding-top: 40px;} }
+
+@media only screen and (max-width: 767px) and (min-width: 616px){
+    #section{ min-height: 930px;}            
+    }
+
+@media only screen and (max-width: 615px) and (min-width: 600px){
+    #section{ min-height: 960px;}            
+    }
+
+@media only screen and (max-width: 599px) and (min-width: 416px){
+    #section{ min-height: 1570px;}            
+    }
+
+@media only screen and (max-width: 415px) and (min-width: 360px){
+    #section{ min-height: 1610px;}            
+    }
+
+@media only screen and (max-width: 359px) and (min-width: 320px){
+    #section{ min-height: 1670px;}            
+    }
+
+@media only screen and (max-width: 630px) {
+#text {margin-left: 9.5%;
+        width: 81%;
+        margin-top: -270px;}
+img.skiing { width: 120px;
+            top: 300px;
+            right:0;}
+         
+}
+
+@media only screen and (max-width: 552px) {
+.header-title {font-size: 3em;}
+.header-subtitle {font-size: 1.4em;}
+img.skiing { width: 115px;
+            top: 310px;}
+}
+
+@media only screen and (max-width: 480px) {
+.header-title {font-size: 2.8em;}
+.header-subtitle {font-size: 1.2em;}
+img.skiing { width: 110;}
+}
+
+@media only screen and (max-width: 452px) {
+.header-title {font-size: 2.2em;}
+.header-subtitle {font-size: 1em;}
+img.skiing { width: 105px;}
+}
+
+@media only screen and (max-width: 364px) {
+.button {padding: 12px 29px;}
+.header-title {font-size: 2.15em;}
+.header-subtitle {font-size: 1em;}
+img.skiing { width: 90px;}
+}
+
+
+.main-footer{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 5px;
+    background: #282828;
+}
+
+.name{
+    font-size: 15px;
+    width: 100%;   
+    display: inline-flex;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.name a{
+    font-family: 'Audiowide', cursive;
+    padding-right: 0.75%;
+    padding-top: 1%;
+}
+
+.main-footer .footer-text{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.main-footer .footer-text ul li{
+    list-style-type: none;
+    display: inline-flex;
+    padding-right: 10%;
+}
+ 
+
+.main-footer .footer-text ul li a{
+    color: gray;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.main-footer .footer-text ul li a:hover{
+    color: #fff;
+}
+  
+.footer-copyright {
+    width: 100%;
+    padding-top: 0.5em;
+    font-size: 85%;
+    text-align: center;
+    background-color: rgb(44, 67, 97);
+}
+
+
+
+
+
+
+
